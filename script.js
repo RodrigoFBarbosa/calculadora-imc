@@ -1,8 +1,8 @@
 function calculate() {
     let peso = Number(document.getElementById('input-kg').value);
     let altura = Number(document.getElementById('input-alt').value);
-    let alturaAoQuadrado = altura * altura;
-    let imc = peso / alturaAoQuadrado;
+    altura **= 2;
+    let imc = peso / altura;
     let messageElement = document.getElementById('message');
 
     output.value = imc.toFixed(1);
@@ -18,3 +18,4 @@ function calculate() {
         messageElement.style.color = 'green'
     }
 }
+
